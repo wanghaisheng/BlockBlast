@@ -1,9 +1,9 @@
 const cacheName = "reun-Block Blast Puzzle-0.8";
 const contentToCache = [
-    "Build/BlockBlast.loader.js",
-    "Build/BlockBlast.framework.js.unityweb",
-    "Build/BlockBlast.data.unityweb",
-    "Build/BlockBlast.wasm.unityweb",
+    "Build/BlockBlast0.8-1.loader.js",
+    "Build/BlockBlast0.8-1.framework.js.unityweb",
+    "Build/BlockBlast0.8-1.data.unityweb",
+    "Build/BlockBlast0.8-1.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
