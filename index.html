@@ -9,6 +9,13 @@
   gtag('js', new Date());
 
   gtag('config', 'G-CC4ZKKC8EF');
+
+  let displayMode = 'browser';
+  const mqStandAlone = '(display-mode: standalone)';
+  if (navigator.standalone || window.matchMedia(mqStandAlone).matches) {
+    displayMode = 'standalone';
+  }
+  ga('set', 'dimension1', displayMode);
 </script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
