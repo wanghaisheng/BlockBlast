@@ -18,13 +18,28 @@
     isPwa = true
   }
   gtag('event', 'pwa_check', {
-  'pwa': isPwa
-});
-const IOS = UA.match(/iPhone|iPad|iPod/);
-	const ANDROID = UA.match(/Android/);
-	const PLATFORM = IOS ? 'ios' : ANDROID ? 'android' : 'unknown';
+  'pwa': isPwa});
 
-alert(PLATFORM);
+  function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Windows Phone must come first because its UA also contains "Android"
+    if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+    }
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+
+    return "unknown";
+}
+
+alert(getMobileOperatingSystem());
 </script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
