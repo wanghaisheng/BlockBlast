@@ -17,8 +17,7 @@
     displayMode = 'fullscreen';
     isPwa = true
   }
-  gtag('event', 'pwa_check', {
-  'pwa': isPwa});
+  gtag('event', 'pwa_check', {'pwa': isPwa});
 
   function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -97,15 +96,15 @@ alert(getMobileOperatingSystem());
       }
 	 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BlockBlast1.0-4.loader.js";
+      var loaderUrl = buildUrl + "/BlockBlast1.1-5.loader.js";
       var config = {
-        dataUrl: buildUrl + "/BlockBlast1.0-4.data.unityweb",
-        frameworkUrl: buildUrl + "/BlockBlast1.0-4.framework.js.unityweb",
-        codeUrl: buildUrl + "/BlockBlast1.0-4.wasm.unityweb",
+        dataUrl: buildUrl + "/BlockBlast1.1-5.data.unityweb",
+        frameworkUrl: buildUrl + "/BlockBlast1.1-5.framework.js.unityweb",
+        codeUrl: buildUrl + "/BlockBlast1.1-5.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "reun",
         productName: "Block Blast Puzzle",
-        productVersion: "1.0",
+        productVersion: "1.1",
         showBanner: unityShowBanner,
       };
 
